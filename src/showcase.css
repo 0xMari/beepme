@@ -1,0 +1,11 @@
+.showcase{
+    height: 100vh;
+    width: 100%;
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    overflow-x: scroll;
+
+}
