@@ -4,7 +4,7 @@ function Works(){
     return(
         <div className="works">
             <div className="text">
-                Here you can find and extensive list of my projects: some of them are good, some of them barely decent: either way have a peak!
+                <a href=''>Here</a> you can find and extensive list of my old projects: some of them are good, some of them barely decent. <br/>Either way have a peak, it's free.99!
             </div>
         </div>
     )

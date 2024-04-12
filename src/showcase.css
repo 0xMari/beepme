@@ -1,11 +1,31 @@
 .showcase{
     height: 100vh;
-    width: 100%;
-    background-color: pink;
 }
 
 .container {
     display: flex;
-    overflow-x: scroll;
+    flex-direction: column;
 
+}
+
+.marq{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    
+    
+}
+
+.pink{
+    background-color: #FF90CC;
+}
+.blue{
+    background-color: #37CFE1;
+}
+
+.stella{
+    height: 2rem;
 }

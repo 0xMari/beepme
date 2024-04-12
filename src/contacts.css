@@ -15,5 +15,5 @@
     width: 60%;
     padding: 5rem;
     font-size: 4rem;
-    align-self: baseline;
+    align-self: flex-end;
 }
