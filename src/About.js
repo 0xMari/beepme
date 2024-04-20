@@ -3,9 +3,15 @@ import './about.css'
 function About(){
     return(
         <div className="about">
-            <div className='text'>
-                Hello! I'm Maria, rofan avid reader and skincare maniac. I change hobbies every other week and I like glitter.
+            <div className='text-a'>
+                <p className='fancy'>Web designer based in Milan</p>
+                <p>I want to build interactive web expericences ✨</p>
             </div>
+            <div className='text-a curr'>
+                <p>Rofan manhwa avid reader and skincare maniac. 
+                <br/>I like glitter, TTRPG, and good food.</p>
+            </div>
+            
         </div>
     )
 }

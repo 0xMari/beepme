@@ -9,14 +9,14 @@ import { Physics, RigidBody, BallCollider } from '@react-three/rapier';
 const Typo = () => {
   return(
     <>
-      <Text anchorX="left" fontSize={2} letterSpacing={-0.025} color="black" position={[-6.6 ,2,-7]}>
-        HELLO WORLD
+      <Text anchorX="left" fontSize={2} letterSpacing={-0.025} color="black" position={[-6.6 ,1.5,-7]} font='/PlayfairDisplay-Regular.ttf'>
+        Hi bestie!
       </Text>
-      <Text anchorX="left" fontSize={2} letterSpacing={-0.025} color="black" position={[-6.6 ,0,-7]}>
-        LOREM IPSUM
+      <Text anchorX="left" fontSize={0.5} letterSpacing={-0.025} color="black" position={[-6.4 , 0.3 ,-7]} font='/PlayfairDisplay-Regular.ttf'>
+        I'm
       </Text>
-      <Text anchorX="left" fontSize={2} letterSpacing={-0.025} color="black" position={[-6.6,-2,-7]}>
-        DOLOR SIT
+      <Text anchorX="left" fontSize={3.5} letterSpacing={-0.025} color="black" position={[-6,-0.8,-7]} font='/PlayfairDisplay-Italic.ttf'>
+        MARIA
       </Text>
     </>
   )
@@ -37,7 +37,7 @@ const MetaBall = ({ color, vec = new THREE.Vector3(), ...props }) => {
   })
   return (
     <RigidBody ref={api} colliders={false} linearDamping={4} angularDamping={0.95} {...props}>
-      <MarchingCube strength={0.35} subtract={6} color={color} />
+      <MarchingCube strength={0.4} subtract={6} color={color} />
       <BallCollider args={[0.1]} type="dynamic" />
     </RigidBody>
   )
@@ -54,7 +54,7 @@ const Pointer = ({ vec = new THREE.Vector3() }) => {
   })
   return (
     <RigidBody type="kinematicPosition" colliders={false} ref={ref}>
-      <MarchingCube strength={0.5} subtract={10} color="orange" />
+      <MarchingCube strength={0.2} subtract={10} />
       <BallCollider args={[0.1]} type="dynamic" />
     </RigidBody>
   )
@@ -64,15 +64,15 @@ const Pointer = ({ vec = new THREE.Vector3() }) => {
 const Blob = () => {
   return(
     <Suspense>
-        <Physics gravity={[0, 2, 0]}>
+        <Physics gravity={[0, 2.5, 0]}>
             <MarchingCubes resolution={80} maxPolyCount={20000} enableUvs={false} enableColors>
             <MeshTransmissionMaterial  backside backsideThickness={1} thickness={1}  />
-            <MetaBall color="indianred" position={[1, 1, 0]} />
-            <MetaBall color="skyblue" position={[-1, -1, 0]} />
-            <MetaBall color="teal" position={[1, 1, 0]} />
-            <MetaBall color="orange" position={[-1, -1, 0]} />
-            <MetaBall color="hotpink" position={[1.5, 1.5, 0]} />
-            <MetaBall color="aquamarine" position={[-1.5, -1.5, 0]} />
+            <MetaBall position={[1, 1, 0]} />
+            <MetaBall position={[-1, -1, 0]} />
+            <MetaBall position={[1, 1, 0]} />
+            <MetaBall position={[-1, -1, 0]} />
+            <MetaBall position={[1.5, 1.5, 0]} />
+            <MetaBall position={[-1.5, -1.5, 0]} />
             <Pointer />
             </MarchingCubes>
             <Environment preset='city' />
@@ -84,6 +84,7 @@ const Blob = () => {
 
 function App() {
   return (
+    
     <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
       <color attach="background" args={['#f0f0f0']} />
       <ambientLight intensity={1} />
