@@ -3,7 +3,7 @@
 .contacts{
     height: 100vh;
     width: 100%;
-    background-color: rgb(184, 149, 255);
+    background-color: #f0f0f0;
     font-family: 'Syncopate', sans-serif ;
     display: flex;
     justify-content: center;
@@ -11,9 +11,41 @@
 }
 
 
-.textxx{
-    width: 60%;
+.peaks{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
     padding: 5rem;
-    font-size: 4rem;
-    align-self: flex-end;
+    font-size: 3rem;
+    text-align: justify;
+    float: right;
+}
+.cont-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.links-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.links-wrap>div{
+    padding: 1.5rem 2rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 215px;
+    text-align: center;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding-top: 1rem;
 }
