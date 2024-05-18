@@ -6,8 +6,13 @@
     height: 100vh;
     width: 100%;
     background-color: #f0f0f0;
-}
+    scroll-snap-type: y mandatory;
 
+}
+.child{
+    scroll-snap-align: start;
+
+}
 .text-a{
     width: 50%;
     padding: 5rem;

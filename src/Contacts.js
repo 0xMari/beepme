@@ -2,7 +2,7 @@ import './contacts.css';
 
 function Contacts(){
     return(
-        <div className="contacts">
+        <div className="contacts" id='contacts'>
             <div className='cont-wrapper'>
                 <div className="peaks">
                     Call me, beep me if you wanna reach me
@@ -11,11 +11,11 @@ function Contacts(){
                     <div>Schedule a call ↗</div>
                     <div>Linkedin ↗</div>
                     <div>Mail ↗</div>
-                    <div>Git ↗</div>
+                    <div>Github ↗</div>
                 </div>
                 <div className='foot'>
                     <div>LAST UPDATE: MAY 2024</div>
-                    <div>BACK TO THE WATER BUBBLES ↑</div>
+                    <a href='#top'>BACK TO THE WATER BUBBLES ↑</a>
                 </div>
             </div>
         </div>

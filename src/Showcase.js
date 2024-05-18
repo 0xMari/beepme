@@ -1,10 +1,9 @@
 import './showcase.css';
 import Marquee from "react-fast-marquee";
 
-
 function Showcase(){
     return(
-        <div className="showcase container-wrap">
+        <div className="showcase container-wrap" id='project'>
             <div className='marq-wrap'>
                 <Marquee pauseOnHover style={{height:'5%'}} autoFill className='rota'>
                     <div className='marq pink synco'>
@@ -39,6 +38,7 @@ function Showcase(){
                     </div>
                 </Marquee>
             </div>
+
             
         </div>
     )

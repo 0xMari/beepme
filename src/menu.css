@@ -3,13 +3,52 @@
     height: 5%;
     width: 100%;
     top:0;
-    left:0;
-    display: flex;
-    justify-content: flex-end;
     z-index: 10;
+    cursor: pointer;
 }
 
 .menu-icon{
     height: 3rem;
     margin: 2rem;
+    float: right;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.menu-icon:active, .menu-icon:hover{
+    transform: rotate(360deg);
+}
+
+
+
+
+
+.NavLinks ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10vh;
+    height: 90vh;
+    width: 100%;
+    background:#a274eb;
+    align-items: center;
+    cursor: crosshair;
+    z-index: 5;
+}
+
+.NavLinks li {
+    list-style-type: none;
+    
+}
+
+.NavLinks a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Syncopate', sans-serif ;
+}
+
+.NavLinks a:hover{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
 }
