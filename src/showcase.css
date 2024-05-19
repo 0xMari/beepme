@@ -40,6 +40,15 @@
 
 .works{
     font-family: 'Montserrat', sans-serif ;
+    position: relative;
+}
+
+.flower-floating{
+    position: absolute;
+    top:8vh;
+    right: 0;
+    z-index: 2;
+    width: 100%;
 }
 
 

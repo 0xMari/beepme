@@ -1,7 +1,10 @@
 import './showcase.css';
 import Marquee from "react-fast-marquee";
+import Flower from './Flower';
+
 
 function Showcase(){
+
     return(
         <div className="showcase container-wrap" id='project'>
             <div className='marq-wrap'>
@@ -19,11 +22,16 @@ function Showcase(){
             
             <div className="works">
                 
-                <div>
+                <div className='work-text'>
                     <p className='text-sc'>Here you can find some of my recent projects. 
-                    Some of them are cool, some of them even cooler, but who am I to judge?</p> 
+                    Some of them are cool, some of them even cooler, but who am I to judge?</p>
+                    <div className='flower-floating'>
+                        <Flower />
+                    </div>
                     <p className='peak'>Either way have a peak, it's $FREE.99!</p>
                 </div>
+
+                
             </div>
 
             <div className='marq-wrap'>
@@ -38,7 +46,6 @@ function Showcase(){
                     </div>
                 </Marquee>
             </div>
-
             
         </div>
     )

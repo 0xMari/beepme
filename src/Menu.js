@@ -3,22 +3,13 @@ import { useState } from "react";
 
 
 const NavLinks = ({isClicked, closeMenu}) =>{
+    
     return(
         <nav className="NavLinks">
-        <ul>
-            <li onClick={() => isClicked && closeMenu()}>
-                <a href="/">Home</a>
-            </li>
-            <li onClick={() => isClicked && closeMenu()}>
-                <a href="/#about">About</a>
-            </li>
-            <li onClick={() => isClicked && closeMenu()}>
-                <a href="/#project">Projects</a>
-            </li>
-            <li onClick={() => isClicked && closeMenu()}>
-                <a href="/#contacts">Contacts</a>
-            </li>
-        </ul>
+            <a className='menu-link' onClick={() => isClicked && closeMenu()} href="/">Home</a>
+            <a className='menu-link' onClick={() => isClicked && closeMenu()} href="/#about">About</a>
+            <a className='menu-link' onClick={() => isClicked && closeMenu()} href="/#project">Projects</a>    
+            <a className='menu-link' onClick={() => isClicked && closeMenu()} href="/#contacts">Contacts</a>
     </nav>
     )
 }
