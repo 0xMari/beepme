@@ -8,7 +8,7 @@ const NavLinks = ({isClicked, closeMenu}) =>{
         <nav className="NavLinks">
             <a className='menu-link' onClick={() => isClicked && closeMenu()} href="/">Home</a>
             <a className='menu-link' onClick={() => isClicked && closeMenu()} href="/#about">About</a>
-            <a className='menu-link' onClick={() => isClicked && closeMenu()} href="/#project">Projects</a>    
+            <a className='menu-link' onClick={() => isClicked && closeMenu()} href="/projects">Projects</a>    
             <a className='menu-link' onClick={() => isClicked && closeMenu()} href="/#contacts">Contacts</a>
     </nav>
     )

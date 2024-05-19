@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { Suspense, useRef, useState, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Environment, MeshDistortMaterial, ContactShadows, PerspectiveCamera, MeshTransmissionMaterial } from '@react-three/drei';
+import { Environment, MeshDistortMaterial, ContactShadows, PerspectiveCamera } from '@react-three/drei';
 import { a as aThree} from '@react-spring/three'
 import { useSpring } from '@react-spring/core'
 
@@ -72,7 +72,7 @@ function Scene() {
                     scale={wobble}
                     onPointerOver={() => setHovered(true)}
                     onPointerOut={() => setHovered(false)}
-                    onClick={() => window.location.href = '/'}>
+                    onClick={() => window.location.href = '/projects'}>
                     
                     <AnimatedMaterial  
                         color={color} 

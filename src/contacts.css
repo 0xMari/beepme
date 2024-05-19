@@ -33,13 +33,20 @@
 
 }
 
-.links-wrap>div{
+.links-wrap>a{
     padding: 1.5rem 2rem;
     margin: 1rem;
     border: 1px solid black;
     border-radius: 50%;
     width: 215px;
     text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.links-wrap>a:hover{
+    color: #ff90cc;
+    border: 1px solid #ff90cc;
 }
 
 .foot{

@@ -8,10 +8,10 @@ function Contacts(){
                     Call me, beep me if you wanna reach me
                 </div>
                 <div className='links-wrap'>
-                    <div>Schedule a call ↗</div>
-                    <div>Linkedin ↗</div>
-                    <div>Mail ↗</div>
-                    <div>Github ↗</div>
+                    <a target="_blank" href='https://calendly.com/0xmari'>Schedule a call ↗</a>
+                    <a target="_blank" href='https://www.linkedin.com/in/maria-jyate/'>Linkedin ↗</a>
+                    <a target="_blank" href=''>Mail ↗</a>
+                    <a target="_blank" href='https://github.com/0xMari'>Github ↗</a>
                 </div>
                 <div className='foot'>
                     <div>LAST UPDATE: MAY 2024</div>
