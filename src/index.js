@@ -15,7 +15,7 @@ import {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <Menu />
+    {/* <Menu /> */}
     <Routes>
       <Route exact path='/' element={<Home />} />
       <Route exact path='/projects' element={<Projects />} />
