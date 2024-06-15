@@ -103,7 +103,7 @@ function App() {
       </div>
       <div className='descr'>
         <p>
-        This website is currently under construction. You can either have fun with the water bubbles above or play around with the demos linked below!
+        This website is currently under construction. You can either have fun with the 🫧water bubbles🫧 above or play around with the demos linked below!
         </p>
         <div className='demos'>
           <div className='demo'>Demo1</div>
