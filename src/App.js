@@ -37,7 +37,7 @@ const MetaBall = ({ color, vec = new THREE.Vector3(), ...props }) => {
   })
   return (
     <RigidBody ref={api} colliders={false} linearDamping={4} angularDamping={0.95} {...props}>
-      <MarchingCube strength={0.4} subtract={6} color={color} />
+      <MarchingCube strength={0.35} subtract={6} color={color} />
       <BallCollider args={[0.1]} type="dynamic" />
     </RigidBody>
   )
@@ -54,7 +54,7 @@ const Pointer = ({ vec = new THREE.Vector3() }) => {
   })
   return (
     <RigidBody type="kinematicPosition" colliders={false} ref={ref}>
-      <MarchingCube strength={0.2} subtract={10} />
+      <MarchingCube strength={0.5} subtract={10} />
       <BallCollider args={[0.1]} type="dynamic" />
     </RigidBody>
   )
@@ -82,33 +82,51 @@ const Blob = () => {
   )
 };
 
+function Test() {
+  let fov
+  useFrame((viewport)=>{
+    const {width, height} = viewport.getCurrentViewport()
+    fov = (width >480) ? 50 : 100 ;
+  })
+
+  console.log(fov)
+  return(
+    fov
+  )
+}
+
+
 function App() {
+  let fov
+  const width = window.innerWidth
+  fov = (width < 480) ? 100: (width < 1281) ? 80 : 50;
+
   return (
     <>
     <div className='big-container'>
       
       <div className='canv-wrap'>
-      <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
-        <color attach="background" args={['#f0f0f0']} />
-        <ambientLight intensity={1} />
-        <Blob/>
-        <Typo/>
-        <Bounds fit clip observe margin={1} maxDuration={0}>
-          <mesh visible={false}>
-              <boxGeometry />
-          </mesh>
-        </Bounds>
-      </Canvas>
-      <Loader />
+        <Canvas camera={{ position: [0, 0, 5], fov: fov }}>
+          <color attach="background" args={['#f0f0f0']} />
+          <ambientLight intensity={1} />
+          <Blob/>
+          <Typo/>
+          <Bounds fit clip observe margin={1} maxDuration={0}>
+            <mesh visible={false}>
+                <boxGeometry />
+            </mesh>
+          </Bounds>
+        </Canvas>
+        <Loader />
       </div>
       <div className='descr'>
         <p>
         This website is currently under construction. You can either have fun with the 🫧water bubbles🫧 above or play around with the demos linked below!
         </p>
         <div className='demos'>
-          <div className='demo'>Demo1</div>
-          <div className='demo'>Demo2</div>
-          <div className='demo'>Demo3</div>
+          <div className='demo'>Demo 1</div>
+          <div className='demo'>Demo 2</div>
+          <div className='demo'>Demo 3</div>
         </div>
         <div className='contact-wrap'>
           <a className='cont' target="_blank" href='https://calendly.com/0xmari'>Schedule a call ↗</a>

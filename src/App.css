@@ -52,3 +52,27 @@
     font-size: smaller;
     
 }
+
+@media screen and (max-width: 480px){
+    .descr{
+        width: 90%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }  
+
+    .demos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-wrap{
+        flex-wrap: wrap;
+        padding-right: 0;
+        padding-left: 2.5rem;
+        padding-bottom: 3rem;
+    }
+    .canv-wrap{
+        overflow: hidden;
+        height: 60%;
+    }
+    
+}
